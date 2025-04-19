@@ -1,0 +1,50 @@
+body
+{
+    background-color: #b1b5be;
+}
+
+header
+{
+    background-color: #9f2063;
+    color: white;
+    text-align: center;
+    margin: 2rem 4rem .5rem 4rem;
+}
+
+.flexbox-container
+{
+    background-color: #23b87c;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 4rem .5rem 4rem;
+}
+
+.flexbox-article
+{
+    background-color: #e4195b;
+    color: white;
+    margin: .5rem;
+    text-align: center;
+}
+
+aside
+{
+    background-color: #116395;
+    color: white;
+    margin: 0rem 4rem .5rem 4rem;
+    text-align: center;
+}
+
+footer
+{
+    background-color: #e06b26;
+    color: white;
+    margin: 0rem 4rem 0rem 4rem;
+    text-align: center;
+}
+
+header, .flexbox-container, .flexbox-article, aside, footer {
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.25rem;
+}
