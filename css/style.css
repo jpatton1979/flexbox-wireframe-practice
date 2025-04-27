@@ -1,6 +1,23 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body
 {
+    min-height: 100vh;
     background-color: #b1b5be;
+    min-width: fit-content;
+}
+
+.main-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin: 1.5rem;
 }
 
 header
@@ -8,22 +25,25 @@ header
     background-color: #9f2063;
     color: white;
     text-align: center;
-    margin: 2rem 4rem .5rem 4rem;
+}
+
+.inner-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
 
 .article-container
 {
     background-color: #23b87c;
-    display: flex;
-    flex-direction: column;
-    margin: .5rem 4rem .5rem 4rem;
 }
 
 .article-item
 {
     background-color: #e4195b;
     color: white;
-    margin: .5rem;
+    margin: 1rem;
     text-align: center;
 }
 
@@ -31,7 +51,6 @@ aside
 {
     background-color: #116395;
     color: white;
-    margin: 0rem 4rem .5rem 4rem;
     text-align: center;
 }
 
@@ -39,12 +58,40 @@ footer
 {
     background-color: #e06b26;
     color: white;
-    margin: 0rem 4rem 0rem 4rem;
     text-align: center;
 }
 
-header, .article-container, .article-item, aside, footer {
+header, .article-container, .article-item, aside, footer
+{
     border-radius: .5rem;
-    padding: .75rem;
-    font-size: 1.25rem;
+}
+
+header, .article-item, aside, footer
+{
+    padding: 1rem;
+}
+
+header, aside, footer
+{
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 900px)
+{
+    .inner-container
+    {
+        flex-direction: row-reverse;
+    }
+
+    aside
+    {
+        flex: 1;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .article-container
+    {
+        flex: 4;
+    }
 }
