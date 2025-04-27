@@ -11,7 +11,7 @@ header
     margin: 2rem 4rem .5rem 4rem;
 }
 
-.flexbox-container
+.article-container
 {
     background-color: #23b87c;
     display: flex;
@@ -19,7 +19,7 @@ header
     margin: .5rem 4rem .5rem 4rem;
 }
 
-.flexbox-article
+.article-item
 {
     background-color: #e4195b;
     color: white;
@@ -43,7 +43,7 @@ footer
     text-align: center;
 }
 
-header, .flexbox-container, .flexbox-article, aside, footer {
+header, .article-container, .article-item, aside, footer {
     border-radius: .5rem;
     padding: .75rem;
     font-size: 1.25rem;
